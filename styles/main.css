@@ -12,26 +12,29 @@ body {
 /* this is a comment */
 
 #container {
-	width:500px;
+	width: 500px;
 	margin: 0 auto;
 }
 
-#exercises, #projects {
+#exercises,
+#projects {
 	margin: 40px 0px;
 }
 
 h1 {
-	color:red;
+	color: red;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
 	margin: 20px 0;
-    font-size:20pt;
-} 
+	font-size: 20pt;
+}
 
 p {
 	margin: 20px 0;
-	font-size:14pt;
+	font-size: 14pt;
 	line-height: 150%;
 }
 
@@ -40,9 +43,9 @@ ul {
 }
 
 a {
-	color:black;
+	color: black;
 }
 
 a:hover {
-	color:red;
+	color: red;
 }
