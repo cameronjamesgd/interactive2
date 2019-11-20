@@ -1,0 +1,81 @@
+body {
+
+    background-color: blue;
+    right: 0px;
+    position: absolute;
+    color: #EDE438;
+    padding: 20px;
+
+    font-family: covik-sans, sans-serif;
+
+    font-weight: 500;
+
+    font-style: normal;
+
+}
+
+#groovy {
+    position: absolute;
+    height: 100vh;
+    left: -1325px;
+    top: -5px;
+    z-index: 1;
+}
+
+#groovy:active {
+    animation: wiggle .75s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+
+}
+
+@keyframes wiggle {
+
+    0% {
+        transform: skew(-0.0turn, 1deg);
+    }
+
+    100% {
+        transform: skew(0.0turn, -1deg);
+    }
+}
+
+
+#text {
+    width: 300px;
+}
+
+.wave {
+    opacity: .3;
+    position: fixed;
+    top: 360px;
+    width: 30400px;
+    left: -200;
+    animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+    transform: translate3d(0, 0, 0);
+    z-index: -3;
+}
+
+
+
+@keyframes wave {
+    0% {
+        margin-left: -2000px;
+    }
+
+    100% {
+        margin-left: -5800px;
+    }
+}
+
+@keyframes swell {
+
+    0%,
+    100% {
+        transform: translate3d(0, -25px, 0);
+    }
+
+    50% {
+        transform: translate3d(0, 5px, 0);
+    }
+}
