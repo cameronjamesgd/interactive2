@@ -1,0 +1,320 @@
+/*
+Theme Name: Larry Sultan (Masonry)
+Author: The Launch Party
+Author URI: http://www.thelaunchparty.net
+Version: 1.0
+
+*/
+
+@import "css/reset.css";
+@import "css/layout.css";
+@import "typography.css";
+
+
+
+/*!------------------------------------------------------ GLOBALS */
+
+html {  background-color: #FFFFFF; }
+body { text-align: center; }
+
+
+#page-wrap, footer{
+	max-width: 1295px;
+	padding: 10px 60px;
+	margin: 0 auto;
+	-webkit-text-size-adjust: 100%;
+	max-height: 100%;
+}
+
+.imgborder {
+	padding: 3px !important;
+	border: 1px solid #DDDDDD;
+}
+
+hr {
+	height: 1px;
+	margin: 20px 0;
+	border: 0;
+	border-top: 1px solid #DDDDDD;
+}
+
+a { line-height: normal; }
+
+/*!------------------------------------------------------ HEADER */
+
+header {
+	width: auto;
+	text-align: left;
+	float: left;
+	height: 100%;
+	padding-top: 58px;
+	margin-right: 20px;
+	position: fixed;
+}
+#logo {
+	margin-bottom: 20px;
+}
+#logo h1{
+	padding: 0 1px 3px;
+	border-bottom: 1px solid #dadfd9;
+}
+nav {
+	width: 100%;
+	overflow: visible;
+}
+
+#nav { float: right; }
+.menu-cont, .menu{
+	width: 100%;
+	text-align: right;
+}
+
+#menu-button {
+	position: absolute;
+	right: 0;
+	top: -30px;
+	display: none;
+}
+#menu-button img {
+	height: 30px;
+	width: 30px;
+}
+
+.sub-menu {
+	margin: 10px 20px;
+}
+
+/*!------------------------------------------------------ CONTENT */
+
+#content-wrap, #content { overflow: visible; }
+#content-wrap {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+#content{ padding-top: 45px; text-align: left; margin-left: 175px; }
+
+/*
+#home-container {
+	display: inline-block;
+	width: auto;
+	position: fixed;
+	top: 5%;
+	bottom: 5%;
+	right: 75%;
+	height: 90%;
+}
+#home-container #slideshow, #home-container #slideshow > div, #home-container #slideshow img { height: 100% !important; width: auto !important; }
+*/
+.home-slideshow {
+	margin-top: 45px;
+}
+#slideshow.home-slideshow > div { text-align: left; }
+
+.gallery-item {
+	width: 250px;
+	float: left;
+	padding: 0 25px 2px 0;
+	position: relative;
+}
+.gallery-item.books-item { width: 50%; padding: 0 12px 2px 0; height: 280px; }
+.gallery-item.books-item:nth-child(even) { padding: 0 0 0 13px; }
+.gallery-item.slideshow-control{ padding: 0 25px 25px 0;}
+
+.gallery-item img { width: 100%; }
+.gallery-title {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: table;
+	opacity: 0;
+	-webkit-transition: opacity 0.5s ease-in-out;
+	-moz-transition: opacity 0.5s ease-in-out;
+	-ms-transition: opacity 0.5s ease-in-out;
+	-o-transition: opacity 0.5s ease-in-out;
+	transition: opacity 0.5s ease-in-out;
+}
+.gallery-title:hover {
+	opacity: 1;
+}
+.gallery-title div {
+	display: table-row;
+	vertical-align: middle;
+	text-align: center;
+	position: static;
+}
+.gallery-title div a {
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+	height: 100%;
+}
+.category-title {
+	clear: both;
+	padding: 10px 0;
+	margin: 10px 0 23px 0;
+	border-bottom: 1px solid #dadfd9;
+}
+.category-container{
+	padding-top: 3px;
+}
+
+
+
+
+#slideshow-controls { float: right; }
+#slideshow-controls span { display: inline-block; position: relative; margin-left: 20px; }
+#slideshow-controls span:hover img { opacity: 1; }
+
+#slideshow-next img, #slideshow-prev img { height: 16px;  opacity: 0.3; }
+
+#statement {
+	background: #FFFFFF;
+}
+#statement-head{
+	clear: both;
+}
+.statement-image {
+	width: 100%;
+	height: auto;
+}
+#statement .fourcol, #words-body .fourcol{
+	padding-left: 3%;
+	border-left: 1px solid #ccc;
+	height: 100%;
+}
+#thumbnails {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 46px;
+	left: 0;
+	background: #FFFFFF;
+	overflow: auto;
+	padding-top: 17px;
+}
+.slideshow-control { cursor: pointer; width: 245px; height: auto; }
+
+
+#menu-words li {
+	margin-bottom: 5px;
+}
+
+.words-menu-cont {
+	margin-top: 20px;
+}
+.words-menu-cont .menu {
+	text-align: left;
+}
+
+/*!------------------------------------------------------ FOOTER */
+
+footer {
+	padding-bottom: 20px;
+}
+
+
+
+
+/* things hidden on pageLoad */
+
+/* .hide() */
+#slideshow > div:gt(0), #menu-content-wrap > div:gt(0), #statement, #statement-title, #thumbnails {
+	display: none;
+}
+
+@media (max-width: 1310px) { #page-wrap { width: 1045px; } #page-wrap.home { width: 100%; } .gallery-item.books-item { height: 215px; }  }
+@media (max-width: 1055px) { #page-wrap { width: 795px; }  #page-wrap.home { width: 100%; } .gallery-item.books-item { width: 100%; padding: 0 !important; height: auto;} }
+
+
+@media handheld, only screen and (max-width: 950px) { 		/* Small Screens, Tablets */
+	
+
+
+}
+
+@media handheld, only screen and (max-width: 795px), only screen and (max-width: 700px) and  (-webkit-min-device-pixel-ratio: 2) {  /* phones */
+		
+	header { min-height: 40px; }
+	
+	#pageHeader{
+		width: 100%;
+		float: none;
+		text-align: left;
+		padding: 0;
+		margin-bottom: 0;
+		position: relative;
+	}
+	#logo { 
+		min-height: 30px;
+		text-align: left;
+		width: 100%;
+		margin: 0;
+	}
+	#logo h1 { padding: 0; }
+	#logo a { line-height: 1.7em;}
+	#nav { float: none; height: auto; }
+	.menu { position: relative; top: 0; bottom: auto;}
+	.menu-cont {
+		text-align: right;
+		background: #FFFFFF;
+		position: relative;
+		z-index: 10;
+		display: none;
+		bottom: auto;
+		top: 0;
+	}
+	header .menu li {
+		display: block;
+		margin: 7px 0;
+		font-size: 1.5em;
+		
+	}
+	#content {
+		margin: 0;
+		padding: 0;
+	}
+	.gallery-item { width: 100%; }
+	.gallery-title { opacity: 1; }
+	.gallery-item.slideshow-control { width: 33.3333333%; padding: 0 10px 10px 0; }
+	.gallery-item.slideshow-control:nth-child(3n) { padding: 0 0 10px 10px;}
+	.gallery-item.slideshow-control:nth-child(3n-1) { padding: 0 5px 10px 5px;}
+	#statement .sevencol { border: 0; }
+	
+	#page-wrap, footer, #home-container {
+		padding: 0 10px;
+		max-width: 100%;
+		width: 100%;
+	}
+	#menu-button{
+		display: block;
+	}
+	.home-slideshow {
+		margin-top: 0;
+	}
+	.gallery-item {
+		padding-right: 0;
+	}
+	.category-title:first-child {
+		margin-top: 0;
+	}
+	.category-title { margin: 0; }
+	
+	#words-body .fourcol, #statement .fourcol {
+		height: auto;
+		border: 0;
+		padding: 0 0 20px 0;
+	}
+	#statement-toggle {
+		display: block;
+	}
+	#slideshow-controls {
+		top: -20px;
+	}
+	#images-toggle .category-title {
+		margin-bottom: 5px;
+		padding-bottom: 5px;
+	}
+	
+}

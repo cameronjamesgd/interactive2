@@ -1,0 +1,175 @@
+#BOAT {
+    padding: 20px;
+    max-width: 90vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom;
+
+}
+
+#MA-PA {
+    display: block;
+    padding: 20px;
+    max-width: 95vw;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#TREE {
+    display: block;
+    padding: 20px;
+    max-width: 95vw;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#AQUA {
+    display: block;
+    padding: 20px;
+    max-width: 95vw;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#PAPER {
+    padding: 20px;
+    max-width: 95vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+
+    font-family: input-serif, serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 23px;
+    position: absolute;
+    bottom: 75px;
+    margin-left: 31px;
+
+}
+
+#loupe {
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    z-index: 1000;
+    pointer-events: none;
+    display: none;
+}
+
+#loupe.active {
+    display: block;
+}
+
+h2 {
+
+    font-family: input-serif, serif;
+    font-weight: 400;
+    font-style: italic;
+    position: absolute;
+    bottom: 25px;
+    margin-left: 31px;
+    opacity: 50%;
+}
+
+.circle-1 {
+
+    height: 2px;
+    width: 12px;
+    background-color: black;
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    bottom: 51px;
+    right: 40px;
+    opacity: 50%;
+}
+
+.circle-2 {
+
+    height: 2px;
+    width: 12px;
+    background-color: black;
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    bottom: 51px;
+    right: 60px;
+    opacity: 50%;
+
+}
+
+.circle-3 {
+
+    height: 2px;
+    width: 12px;
+    background-color: black;
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    bottom: 51px;
+    right: 80px;
+    opacity: 20%;
+}
+
+
+@media print {
+
+    img {
+        transform: scale(120%) !important;
+    }
+
+    #loupe {
+        left: 24vw !important;
+        top: 12vh !important;
+        transform: scale(150%) !important;
+    }
+
+    h1 {
+        position: absolute;
+        left: 20.5vw !important;
+        top: 55.75vh !important;
+        font-size: 75%;
+    }
+
+    h2 {
+        position: absolute;
+        left: 20.5vw !important;
+        top: 58.75vh !important;
+        font-size: 75%;
+    }
+
+    #MA-PA {
+        display: none;
+    }
+
+    #BOAT {
+        display: none;
+    }
+
+    #PAPER {
+        display: none;
+    }
+
+    .circle-1 {
+        display: none;
+    }
+
+    .circle-2 {
+        display: none;
+    }
+
+    .circle-3 {
+        display: none;
+    }
+
+
+}

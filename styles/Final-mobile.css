@@ -1,3 +1,9 @@
+body {
+    padding: 25px;
+    padding-right: 25px;
+
+}
+
 h1 {
 
     font-family: input-serif, serif;
@@ -5,6 +11,10 @@ h1 {
     font-weight: 700;
 
     font-style: normal;
+
+    top: 20px;
+
+    position: absolute;
 }
 
 h2 {
@@ -15,6 +25,12 @@ h2 {
     font-weight: 400;
 
     font-style: italic;
+
+    position: absolute;
+
+    top: 70px;
+
+
 }
 
 p {
@@ -27,7 +43,13 @@ p {
 
     line-height: 30px;
 
-    font-size: 135%;
+    font-size: 125%;
 
     opacity: 50%;
+
+    position: absolute;
+
+    top: 140px;
+
+    width: 425px;
 }
